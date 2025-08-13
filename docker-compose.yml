@@ -1,5 +1,3 @@
-version: "3.9"
-
 services:
   gemini_cli:
     build: .
@@ -9,3 +7,9 @@ services:
       - ~/.netrc:/root/.netrc
     env_file:
       - .env
+    networks:
+      global-net:
+
+networks:
+  global-net:
+    external: true

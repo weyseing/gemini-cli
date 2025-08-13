@@ -10,10 +10,15 @@
         "--isolated"
       ]
     },
-    "DuckDuckGo": {
+    "DBHub": {
       "command": "npx",
       "args": [
-        "@oevortex/ddg_search@latest"
+        "-y",
+        "@bytebase/dbhub",
+        "--transport",
+        "stdio",
+        "--dsn",
+        "mariadb://${DB1_USER}:${DB1_PASS}@${DB1_ENDPOINT}:${DB1_PORT}/${DB1_DATABASE_NAME}"
       ]
     }
   }
