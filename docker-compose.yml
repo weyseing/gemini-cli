@@ -6,5 +6,6 @@ services:
     container_name: gemini_cli
     volumes:
       - .:/workspace
+      - ~/.netrc:/root/.netrc
     env_file:
       - .env
