@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  gemini_cli:
+    build: .
+    container_name: gemini_cli
+    volumes:
+      - .:/workspace
+    env_file:
+      - .env

@@ -1,0 +1,17 @@
+{
+  "model": "gemini-2.5-flash",
+  "mcpServers": {
+    "Fiuu Onboarding Agent": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote@latest",
+        "https://onboarding-mcp.fiuu.com/sse",
+        "--header",
+        "X-UserID:$MCP_OBD_EMAIL",
+        "--header",
+        "X-SecretKey:$MCP_OBD_KEY"
+      ]
+    }
+  }
+}
