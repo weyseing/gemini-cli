@@ -1,16 +1,19 @@
 {
   "model": "gemini-2.5-flash",
   "mcpServers": {
-    "Fiuu Onboarding Agent": {
+    "Playwright": {
       "command": "npx",
       "args": [
-        "-y",
-        "mcp-remote@latest",
-        "https://onboarding-mcp.fiuu.com/sse",
-        "--header",
-        "X-UserID:$MCP_OBD_EMAIL",
-        "--header",
-        "X-SecretKey:$MCP_OBD_KEY"
+        "@playwright/mcp@latest",
+        "--headless",
+        "--no-sandbox",
+        "--isolated"
+      ]
+    },
+    "DuckDuckGo": {
+      "command": "npx",
+      "args": [
+        "@oevortex/ddg_search@latest"
       ]
     }
   }
