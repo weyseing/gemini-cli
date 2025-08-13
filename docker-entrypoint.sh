@@ -1,5 +1,10 @@
 #!/bin/sh
 
+# git
+git config user.email $GIT_EMAIL
+git config user.name $GIT_USERNAME
+git config --global --add safe.directory /workspace 
+
 # set env in settins.json
 mkdir -p /workspace/.gemini
 cp /workspace/gemini_settings.json /workspace/.gemini/settings.json
