@@ -12,9 +12,11 @@ RUN echo 'export PS1="\\[\\e[1;32m\\]\\u@\\h\\[\\e[0m\\]:\\[\\e[1;34m\\]\\w\\[\\
 # Startup with gemini-cli
 RUN echo 'gemini' >> /root/.bashrc
 
-# Copy file & workdir
+# Copy file
 COPY . /workspace
-WORKDIR /workspace
+
+# workdir
+WORKDIR /app
 
 # Entry point
 RUN chmod 755 /workspace/docker-entrypoint.sh

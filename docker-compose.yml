@@ -5,6 +5,7 @@ services:
     volumes:
       - .:/workspace
       - ~/.netrc:/root/.netrc
+      - ${GEMINI_WORKSPACE_DIR}:/app
     env_file:
       - .env
     networks:

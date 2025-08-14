@@ -1,5 +1,12 @@
 # Setup Guide
+- **Set workspace/project path** for Gemini to work on
+  - Set `GEMINI_WORKSPACE_DIR=<YOUR PROJECT PATH>` in **~/.bash_profile**
+  
 - **Get Gemini API key**
+  - Access to https://aistudio.google.com/ to create key
+
+![Alt text](./asset/3.PNG)
+![Alt text](./asset/4.PNG)
 
 - Copy `.env.example` to `.env` and fill up env below.
   - For **general** or **coding** use:
