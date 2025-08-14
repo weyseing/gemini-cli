@@ -1,3 +1,5 @@
+![Alt text](./asset/5.PNG)
+
 # Setup Guide
 - **Set workspace/project path** for Gemini to work on
   - Set `GEMINI_WORKSPACE_DIR=<YOUR PROJECT PATH>` in **~/.bash_profile**

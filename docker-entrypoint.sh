@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # git
-git config user.email $GIT_EMAIL
-git config user.name $GIT_USERNAME
+git config --global user.email $GIT_EMAIL
+git config --global user.name $GIT_USERNAME
 git config --global --add safe.directory /app 
 
 # set env in settings.json
